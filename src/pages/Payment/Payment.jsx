@@ -39,9 +39,9 @@ function Payment() {
 				method: "POST",
 				url: `/payment/create?total=${total * 100}`,
 			});
-			// console.log(response.data);
+			console.log(response.data);
 			//2. cline side(react side) confirmation using STRIPE
-			const clientServer = response.data?.clientServer;
+			const clientServer = response.data?.clientSecret;
 			const { paymentIntent } = await stripe.confirmCardPayment(clientServer, {
 				payment_method: {
 					card: elements.getElement(CardElement),
