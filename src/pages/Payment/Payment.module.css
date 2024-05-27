@@ -1,0 +1,89 @@
+.payment_header {
+	padding: 20px;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 700;
+	gap: 100px;
+	border-color: #ddd !important;
+	border-style: solid !important;
+	border-width: 0 0 1px 0 !important;
+	background-image: url(https://images-na.ssl-images-amazon.com/images/G/31/common/sprites/tspc-header-bkg.png);
+	height: 60px;
+	background-position-y: -13px;
+}
+.logo img {
+	width: 15vh;
+	margin-left: 10px;
+}
+.payment {
+	padding: 30px;
+}
+.flex {
+	display: flex;
+	gap: 20px;
+	padding: 30px;
+}
+.flex h3 {
+	min-width: 300px;
+}
+.flex img{
+    width: 80px !important;
+}
+.flex div{
+height: auto !important;
+}
+.payment_card_container{
+    max-width: 350px;
+    width: 100%;
+}
+.errMsg{
+	border-color: #f8a5a5;
+	font-size: 15px;
+		border-radius: 3px;
+	border-style: solid ;
+	color: rgb(250, 3, 3);
+}
+
+.payment_detail{
+	font-size: 20px;
+}
+.payment_price{
+	padding: 20px;
+}
+.payment_price > div{
+	display: flex;
+	gap: 10px;
+	font-size: 16px;
+}
+.payment_price span{
+	display: flex;
+	gap: 10px;
+}
+.payment_detail button{
+	margin-top: 15px;
+	font-size: 18px;
+	width: 100%;
+	border: none;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+.payment_detail button:hover{
+		background-color: var(--primary-shade);
+
+}
+.loading{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	color: rgb(52, 52, 52);
+}
+@media screen and (max-width: 768px){
+	.flex{
+		flex-direction: column;
+	}
+}

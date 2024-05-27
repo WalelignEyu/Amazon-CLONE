@@ -1,0 +1,29 @@
+.order_container{
+    background-color: #efeeee;
+    padding: 30px;
+}
+.orders{
+    background-color: #ffff;
+    padding: 20px;
+}
+.orders h1{
+    color: rgb(1, 162, 1);
+    border: 1px solid rgb(67, 252, 67);
+    box-shadow: 0 0 0 1px;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+.thanks{
+border-bottom: 2px solid var(--primary-shade);
+    padding: 15px;
+}
+.orders p{
+    padding: 12px;
+}
+.orders img{
+width: 100px !important;
+}
+.orders div {
+    height: auto !important;
+}
