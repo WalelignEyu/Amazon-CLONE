@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 .container img{
@@ -38,8 +38,8 @@
 }
 .subtotal{
     padding: 20px;
-    min-width: 300px;
     height: 80%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,9 +65,20 @@
     display: flex;
     gap: 20px;
 }
-@media screen and (max-width: 968){
-    .container{
+@media screen and (max-width: 768px) {
+    .container {
         flex-direction: column;
         order: 1;
+    }
+    .subtotal {
+        width: 100%;
+        margin: 20px 0;
+        gap: 20px;
+        padding: 20px;
+        height: auto;
+    }
+    .subtotal > div, .subtotal span {
+        display: flex;
+        gap: 20px;
     }
 }
