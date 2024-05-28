@@ -68,19 +68,21 @@
 /* Responsive styling for smaller screens */
 @media screen and (max-width: 768px) {
     .product_container {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 40px;
-         display: grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 1400px;
     margin: 100px auto;
-    justify-content: center;
-    }
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+     }
     .product_container section {
         margin: 0 auto;
     }
-    .card_container {
-        width: 100%;   
 }
-}
+   
+    
+
 
 /* Styling for flexed product layout */
 .product_flexed {
